@@ -1,23 +1,26 @@
 import React, {Component, Fragment} from 'react';
-import MainPictureContainer from './MainPictureContainer'
+import {BrowserRouter as Router} from 'react-router-dom'
+import './App.css'
 import ProjectContainer from './ProjectContainer'
+import styled from 'styled-components'
+
+const Acpp = styled.div`
+  background-color: #ee7600;
+  
+`;
 
 class App extends Component {
     render() {
         return (
-            <Fragment>
-                <div className="container">
-                    <h1>Hello World!</h1>
-                    <div className="row">
-                        <div className="col-sm-6" >
-                            <p>Lorem ipsum...</p>
-                        </div>
-                        <div className="col-sm-6" >
-                            <p>Sed ut perspiciatis...</p>
-                        </div>
-                    </div>
-                </div>
-            </Fragment>
+
+            <Router>
+                <Fragment>
+                    <Acpp>
+                        <ProjectContainer/>
+                    </Acpp>
+                </Fragment>
+            </Router>
+
         );
     }
 }
