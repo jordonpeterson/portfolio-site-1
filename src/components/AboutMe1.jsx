@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import MainPicture from "../MainPicture";
 
-class AboutMe extends Component {
+class AboutMe1 extends Component {
   state = {};
   render() {
     return (
@@ -28,4 +28,4 @@ class AboutMe extends Component {
   }
 }
 
-export default AboutMe;
+export default AboutMe1;

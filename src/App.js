@@ -3,6 +3,8 @@ import "./App.css";
 import NavBar1 from "./components/NavBar1.jsx";
 import Router1 from "./components/Router1";
 import Carousel1 from "./components/Carousel1";
+import Home1 from "./components/Home1";
+import Body1 from "./components/Body1";
 
 class App extends Component {
   render() {
@@ -14,17 +16,7 @@ class App extends Component {
               <NavBar1 />
             </div>
           </header>
-          <main className="row">
-            <div className="col">
-              {""}
-              <Router1 />
-            </div>
-          </main>
-          <footer className="row">
-            <div className="col">
-              <Carousel1 />
-            </div>
-          </footer>
+          <Router1 />
         </div>
       </Fragment>
     );
